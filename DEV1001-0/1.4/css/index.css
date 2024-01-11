@@ -1,0 +1,19 @@
+body {
+    background-color: #0005;
+}
+
+section {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    background-color: antiquewhite;
+}
+
+h1,
+h5 {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+p {
+    text-align: center;
+}
