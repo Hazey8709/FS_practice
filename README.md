@@ -1,3 +1,4 @@
 # Full Sail Practice Work (Audited Classes) 
 
-**(DEV1001-0  ITD1)** []
+### **ITD1:** 
+[**DEV1001-0**](https://github.com/Hazey8709/FS_practice/tree/main/DEV1001-0)
