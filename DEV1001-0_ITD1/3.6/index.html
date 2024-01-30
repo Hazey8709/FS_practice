@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--! Fortin, Jordan. 1/29/24. 3.6 HTML Forms -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+
+        <h3>Problem #1</h3>
+        <h2>Fill'er Up</h2>
+
+        <form>
+            <label for="gallons">Number of Gallons to convert:</label>
+            <br />
+            <input
+                type="number"
+                id="gallons"
+                name="gallons"
+                placeholder="# of gallons"
+                min="1"
+                required
+            />
+            <br />
+
+            <label for="convertType">Convert Type:</label>
+            <br />
+            <label for="type">Quarts:</label>
+            <input type="radio" id="convertQuarts" name="type" value="quarts" />
+
+            <label for="type">Pints:</label>
+            <input
+                type="radio"
+                id="convertPints"
+                name="type"
+                value="pints"
+                checked
+            />
+
+            <label for="type">Cup:</label>
+            <input type="radio" id="convertCups" name="type" value="cups" />
+            <br />
+
+            <button type="button" id="submitBtn">Convert</button>
+            <button type="reset" id="resetBtn">Reset</button>
+        </form>
+
+        <div class="convertReturn">
+            <h2>Converts To</h2>
+            <h4>Quarts</h4>
+            <p id="quartsReturn"></p>
+            <br />
+
+            <h4>Pints</h4>
+            <p id="pintsReturn"></p>
+            <br />
+
+            <h4>Cups</h4>
+            <p id="cupsReturn"></p>
+        </div>
+
+        <h3>Problem #2</h3>
+        <h2>Movie Star</h2>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
