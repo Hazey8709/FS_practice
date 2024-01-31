@@ -10,12 +10,21 @@ h1 {
 }
 h2 {
     text-align: center;
+    text-decoration: underline;
     padding: 0.5rem;
 }
 
 h3 {
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+.subTitle {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
 }
 
 label {
@@ -49,7 +58,7 @@ form {
     border: 0.1rem solid black;
     border-radius: 0.3rem;
     background-color: antiquewhite;
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
 }
 
@@ -59,4 +68,15 @@ button {
     margin-left: 65px;
     margin-bottom: 0.5rem;
     padding: 0.1rem;
+}
+
+img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#movieAmountReturn {
+    text-decoration: none;
+    margin-top: 1rem;
 }

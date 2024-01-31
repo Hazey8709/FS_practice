@@ -14,6 +14,9 @@
         <h3>Problem #1</h3>
         <h2>Fill'er Up</h2>
 
+        <h3 class="subTitle">
+            To convert your gallons to Quarts, Pints or Cups use the form below.
+        </h3>
         <form>
             <label for="gallons">Number of Gallons to convert:</label>
             <br />
@@ -65,6 +68,40 @@
 
         <h3>Problem #2</h3>
         <h2>Movie Star</h2>
+        <h3 class="subTitle">
+            We will determine what rank you are in the movie club, based on how
+            many movies you own! Use form below.
+        </h3>
+
+        <h6>
+            Fill in the number of each kind of movies you have & click button
+            below.
+        </h6>
+
+        <form>
+            <label for="">DVD you own.</label> <br />
+            <input type="number" id="dvds" min="1" required />
+            <br />
+            <label for="">Blu-Rays you own.</label>
+            <input type="number" id="bluRays" min="1" required />
+            <br />
+
+            <label for="">Ultra-Violet you own.</label>
+            <input type="number" id="ultraViolets" min="1" required />
+            <br />
+
+            <button type="button" id="resultBtn">Results</button>
+            <button type="reset" id="resetBtn">Reset</button>
+        </form>
+
+        <h1 id="movieAmountReturn"></h1>
+        <img
+            src="img/bronzeStar.jpg"
+            id="picReturn"
+            alt="Movie medal Picture Award"
+            title="Award Picture"
+            style="visibility: hidden"
+        />
 
         <script src="js/script.js"></script>
     </body>
