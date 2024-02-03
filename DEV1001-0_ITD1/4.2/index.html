@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--! Fortin, Jordan. Body Mass Calculator. 4.2 Final Project -->
+        <!--! Fortin, Jordan. 2/2/24. Body Mass Calculator. 4.2 Final Project -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
@@ -10,6 +10,71 @@
     </head>
     <body>
         <h1>Body Mass Calculator</h1>
+        <p>Check out your BMI with a couple clicks!</p>
+
+        <form>
+            <h3 class="formLabel">Height</h3>
+
+            <label for="feet">Feet:</label>
+            <!--! size="3" change size in css  -->
+
+            <input
+                type="number"
+                id="feet"
+                name="feet"
+                min="1"
+                max="8"
+                placeholder="5"
+                required
+            />
+
+            <label for="inch">Inches:</label>
+            <!--! size="3" change size in css  -->
+            <input
+                type="number"
+                id="inch"
+                name="inch"
+                min="1"
+                max="12"
+                step=".1"
+                placeholder="10"
+                required
+            />
+            <br />
+            <br />
+
+            <label for="lbs">Weight<span>(In LBS):</span></label>
+            <!--! size="3" change size in css  -->
+
+            <input
+                type="number"
+                id="lbs"
+                name="lbs"
+                min="1"
+                max="1400"
+                step=".1"
+                placeholder="160"
+                required
+            />
+            <br />
+            <br />
+
+            <button type="button" id="submit_Btn">Submit</button>
+            <button type="reset" id="reset_Btn">Reset</button>
+        </form>
+
+        <div>
+            <h3>Answer</h3>
+            <p id="BMI-Message_Return"></p>
+        </div>
+
+        <img
+            src="img/extremeObeseWeight.jpg"
+            id="picReturn"
+            alt="BMI Photo"
+            title="Weight Picture"
+            style="visibility: visible"
+        />
 
         <script src="js/script.js"></script>
     </body>
