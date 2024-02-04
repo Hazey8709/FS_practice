@@ -2,8 +2,10 @@ h1 {
     text-align: center;
 }
 
-h1 + p {
+p {
+    /* display: block; */
     text-align: center;
+    /* margin-inline: auto; */
 }
 
 form {
@@ -69,7 +71,7 @@ div {
 }
 
 #BMI-Message_Return {
-    border: 0.1rem solid green; /*! change border to white after */
+    border: 0.1rem solid white; /*! Answer box */
     width: 60%;
     height: 4rem;
     margin: 0 auto;
@@ -78,6 +80,7 @@ div {
 h3 {
     text-align: center;
     text-decoration: underline;
+    text-underline-offset: 0.1em;
 }
 
 /**  Image  */
