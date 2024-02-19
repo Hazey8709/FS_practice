@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Numbers Graph</title>
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Random Numbers</title>
+    </head>
+    <body>
+        <h1>
+            Pick 5 random numbers between a range of numbers and show the
+            average of the 5 numbers
+        </h1>
+
+        <p>
+            Pick a range between two numbers, It will pick 5 random numbers
+            between the range specified. It will show the average of the 5
+            random numbers and make a vertical bar graph displaying the 5 random
+            numbers.
+        </p>
+        <form id="graphForm">
+            <h3>Min Range Values 5-98</h3>
+            <label for="minRange">Min Range:</label>
+            <input
+                type="number"
+                id="minRange"
+                min="5"
+                max="98"
+                step="1"
+                required
+            />
+
+            <h3>Max Range Values 7-100</h3>
+            <label for="maxRange">Max Range:</label>
+            <input
+                type="number"
+                id="maxRange"
+                min="7"
+                max="100"
+                step="1"
+                required
+            />
+            <br />
+
+            <button type="button" id="showGraphBtn">Show Graph</button>
+        </form>
+
+        <h2>Average: <span id="average"></span></h2>
+
+        <canvas id="chartCanvas" width="600" height="700"></canvas>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

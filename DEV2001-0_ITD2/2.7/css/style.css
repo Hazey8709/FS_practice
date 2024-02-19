@@ -1,0 +1,44 @@
+/* */
+
+body {
+    background-color: #0005;
+}
+
+h1 {
+    text-align: center;
+}
+p:first-of-type {
+    text-align: center;
+}
+
+#graphForm {
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+h3 {
+    text-align: center;
+}
+
+label {
+    padding: 0.2rem;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+canvas {
+    border: .2rem solid #000;
+    border-radius: 0.3rem;
+    background-color: white;
+}
