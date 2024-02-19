@@ -1,6 +1,7 @@
 //
 //
 
+//* IIFE Function
 (function () {
     const canvas = document.getElementById("chartCanvas");
     const ctx = canvas.getContext("2d");
@@ -12,6 +13,7 @@
 
     showGraphBtn.addEventListener("click", createChart);
 
+    //* Get Random Color
     function getRandomColor() {
         const letters = "0123456789ABCDEF";
         let color = "#";
@@ -22,10 +24,10 @@
     }
 
     function createChart() {
-        // Clear previous graph
+        //* Clear previous graph
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // Validate form inputs
+        //* Validate form inputs
         if (!form.checkValidity()) {
             alert("Please enter valid input values.");
             return;
@@ -45,7 +47,7 @@
         let sum = 0;
         const barColors = [];
 
-        // Generate random numbers and calculate average
+        //* Generate random numbers and calculate average
         for (let i = 0; i < 5; i++) {
             const randomNumber =
                 Math.floor(Math.random() * (maxRange - minRange + 1)) +
@@ -58,10 +60,10 @@
         const average = sum / dataPoints.length;
         averageDisplay.textContent = average.toFixed(2);
 
-        // Calculate the maximum data value
+        //* Calculate the maximum data value
         const maxDataValue = Math.max(...dataPoints);
 
-        // Draw the graph (bar chart in this example)
+        //* Draw the graph (bar chart in this example)
         const barWidth = canvas.width / (2 * dataPoints.length + 1);
         const scale = canvas.height / maxDataValue;
 
@@ -69,16 +71,16 @@
             const x = (2 * i + 1) * barWidth;
             const height = dataPoints[i] * scale - 20;
 
-            // Draw the bar with a random color
+            //s Draw the bar with a random color
             ctx.fillStyle = barColors[i];
             ctx.fillRect(x, canvas.height - height, barWidth, height);
 
-            // Display labels above each bar
+            //s Display labels above each bar
             ctx.fillStyle = "white"; // Resetting the fill color for text
 
             ctx.fillText(`Random #${i + 1}`, x, canvas.height);
 
-            // Display the random number at bar bottom
+            //s Display the random number at bar bottom
             ctx.fillStyle = "black";
             ctx.fillText(
                 dataPoints[i].toString(),
