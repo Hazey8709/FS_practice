@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>3.11 Assn.</title>
+    </head>
+    <body>
+        <h1>My Favorite Car List with Stats</h1>
+        <form id="carForm">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" required /><br />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required /><br />
+
+            <label for="miles">Miles:</label>
+            <input type="number" id="miles" min="1" step="1" required /><br />
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" min="1" step="1" required /><br />
+
+            <label for="driveType">Drive Type:</label>
+            <select id="driveType" required>
+                <option value="awd">AWD</option>
+                <option value="rwd">RWD</option>
+                <option value="fwd">FWD</option>
+                <option value="4x4">4x4</option>
+            </select>
+            <br />
+
+            <button type="button" id="addButton">Add Car</button>
+            <button type="button" id="displayButton">Display All</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+
+        <div id="output_Cont">
+            <p id="output"></p>
+        </div>
+
+        <script src="js/utility.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

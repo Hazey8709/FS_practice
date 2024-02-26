@@ -1,0 +1,56 @@
+:root {
+    --black: black;
+    --white: white;
+    --BG-Color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#carForm {
+    border: 0.1rem solid var(--black);
+    border-radius: 0.3rem;
+    background-color: #0005;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+}
+
+#miles {
+    margin-left: 0.35rem;
+}
+
+#year {
+    margin-left: 0.6rem;
+}
+
+#driveType {
+    margin-top: 0.3rem;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#output {
+    border: 0.1rem solid var(--black);
+    border-radius: 0.3rem;
+    background-color: var(--BG-Color);
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    padding: 0.2rem;
+}
+
+p {
+    border: 0.01rem solid var(--white);
+    border-radius: 0.3rem;
+}
